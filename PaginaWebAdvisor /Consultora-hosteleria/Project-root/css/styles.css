@@ -1,0 +1,262 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales del fondo */
+body {
+    background: linear-gradient(to bottom, #efe8fa, #ffffff), /* Degradado de morado a blanco */
+                radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 60%),
+                radial-gradient(circle at 80% 60%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%),
+                radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 50%),
+                radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 60%),
+                radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman", Times, serif; /* Fuente cambiada a Times New Roman */
+    line-height: 1.6;
+    color: #333;
+    margin: 0; /* Elimina márgenes predeterminados del body */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la ventana */
+    overflow-x: hidden; /* Evita que el body se desplace horizontalmente */
+}
+
+/* Encabezado */
+header {
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+    background: transparent; /* Fondo transparente para que coincida con el fondo de la página */
+    display: flex; /* Usar Flexbox para alinear contenido */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra el contenedor de navegación */
+    margin: 0; /* Elimina cualquier margen que pudiera causar un espacio */
+    box-shadow: none; /* Asegura que no haya sombras que creen líneas */
+    position: relative; /* Permite el uso de posicionamiento relativo */
+}
+
+/* Estilos para el Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Posiciona el logo de forma absoluta */
+    left: 20px; /* Alinea el logo a la izquierda */
+    margin-right: 20px; /* Espacio entre el logo y la navegación */
+}
+
+.logo-img {
+    width: 300px; /* Aumenta el ancho del logo */
+    height: auto; /* Mantener la proporción del logo */
+    max-height: 150px; /* Aumenta la altura máxima del logo */
+}
+
+/* Navegación */
+.navbar {
+    display: flex; /* Usar Flexbox para la navegación */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los enlaces de navegación */
+    flex-grow: 1; /* Permite que la navegación ocupe el espacio disponible */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Muestra los enlaces de navegación en línea */
+    gap: 30px; /* Espacio entre los enlaces */
+    padding: 0; /* Elimina el padding de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+}
+
+/* Estilo de los enlaces de navegación */
+.nav-links a {
+    text-decoration: none;
+    color: #000; /* Color de texto de los enlaces de navegación a negro */
+    font-weight: 100; /* Peso de fuente */
+    font-size: 30px; /* Tamaño de fuente ajustado */
+    transition: color 0.3s; /* Transición suave */
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Color de enlace al pasar el ratón */
+}
+
+/* Estilo para la sección Hero */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    color: #000; /* Cambia el color del texto a negro */
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent; /* Elimina el fondo blanco */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #000; /* Cambia el color del título a negro */
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #000; /* Cambia el color del párrafo a negro */
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #8e4afd; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Elimina cualquier borde */
+    font-family: "Times New Roman", Times, serif; /* Fuente Times New Roman */
+    display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Efecto hover para el botón */
+.btn-primary:hover {
+    background-color: #5a2fb0; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Asegura que el texto permanezca blanco */
+}
+
+/* Estilos para la Sección de Texto 1 */
+.text-section {
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    text-align: center; /* Centra el texto */
+    max-width: 1000px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra la sección en la página */
+    color: #000; /* Color de texto */
+    font-family: "Times New Roman", Times, serif; /* Fuente Times New Roman */
+}
+
+.text-section h2 {
+    font-size: 44px; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.text-section p {
+    font-size: 24px; /* Tamaño del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color de texto */
+}
+
+/* Estilos para la Cuadrícula de Fotos */
+.photo-grid {
+    padding: 0px 0px; /* Espaciado alrededor de la sección */
+    display: grid; /* Usar display grid para organizar las fotos */
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* 3 columnas, tamaño mínimo de 300px */
+    gap: 10px; /* Reduce el espacio entre las fotos (anteriormente 20px) */
+    max-width: 1400px; /* Ancho máximo de la cuadrícula */
+    margin: 0 auto; /* Centra la cuadrícula */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-items: center; /* Centra los elementos horizontalmente */
+}
+
+.grid-container {
+    display: grid; /* Usar display grid para organizar las fotos */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 10 px; /* Espacio entre las fotos */
+    max-width: 800px; /* Ancho máximo de la cuadrícula */
+    margin: 0 auto; /* Centrar la cuadrícula */
+}
+
+.grid-item {
+    padding: 5px; /* Reduce el espaciado interno (anteriormente 10px) */
+    text-align: center; /* Alineación centrada del texto */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Alineación de los elementos en columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    justify-content: center; /* Centrar los elementos verticalmente */
+    width: 100%; /* Permitir que el contenedor use el espacio completo */
+    max-width: 450px; /* Ancho máximo del contenedor para agrandar las fotos */
+}
+
+.grid-item img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    max-width: 100%; /* Aumenta el tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las fotos */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.grid-item p {
+    margin-top: 10px; /* Espacio encima del texto */
+    font-size: 1rem; /* Tamaño de fuente del texto */
+    color: #000; /* Color del texto en negro */
+    font-family: "Times New Roman", Times, serif; /* Fuente Times New Roman */
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: inherit; /* Usa el mismo fondo que el body */
+    color: #000; /* Cambia el color del texto del pie de página a negro */
+    padding-top: 40px; /* Espaciado superior adicional en el pie de página */
+    margin-top: 60px; /* Aumenta el espacio sobre el pie de página */
+}
+
+/* Estilos para la Sección Sobre Nosotros */
+.about-section {
+    padding: 40px 20px; /* Espaciado alrededor de la sección */
+    text-align: center; /* Alineación centrada del texto */
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra la sección en la página */
+    color: #000; /* Color del texto */
+}
+
+.about-section h1 {
+    font-size: 36px; /* Tamaño del encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.about-section p {
+    font-size: 18px; /* Tamaño del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color de texto */
+}
+
+/* Estilos para la Galería de Fotos */
+
+.gallery-container {
+    display: grid; /* Cambia de inline-flex a grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las fotos */
+    width: 100%; /* Usa todo el ancho disponible */
+    margin: 0 auto; /* Centra la cuadrícula */
+}
+
+.gallery-item {
+    display: inline-block; /* Hace que cada foto se muestre en línea */
+    width: calc(33.33% - 20px); /* Ancho de cada foto ajustado para mostrar 3 fotos a la vez */
+    margin: 0 10px; /* Espacio entre las fotos */
+    text-align: center; /* Alineación centrada del texto */
+    vertical-align: top; /* Alineación vertical al tope */
+}
+
+.gallery-item img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las fotos */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.gallery-item h3 {
+    font-size: 20px; /* Tamaño del título */
+    margin: 10px 0; /* Espaciado alrededor del título */
+}
+
+.gallery-item p {
+    font-size: 16px; /* Tamaño de la descripción */
+    color: #555; /* Color del texto de la descripción */
+}

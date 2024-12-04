@@ -1,0 +1,13 @@
+/* styles.css */
+body {
+    margin: 0;
+    height: 300vh; /* Aumentamos la altura de la página para más espacio de scroll */
+    background: linear-gradient(to bottom, #add8e6, #ffffff); /* Azul más claro (color #add8e6) a blanco (#ffffff) */
+    transition: background 0.5s; /* Transición suave */
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
